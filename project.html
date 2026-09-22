@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="project.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Document</title>
+    <style>
+      [data-aos="slide-right"] {
+        opacity: 0 !important;
+        transform: translateX(-25px) !important;
+        transition-property: opacity, transform !important;
+      }
+
+      [data-aos="slide-right"].aos-animate {
+        opacity: 1 !important;
+        transform: translateX(0)  !important;
+      }
+
+      [data-aos="slide-left"] {
+        opacity: 0 !important;
+        transform: translateX(25px) !important;
+        transition-property: opacity, transform !important;
+      }
+
+      [data-aos="slide-left"].aos-animate {
+        opacity: 1 !important;
+        transform: translateX(0)  !important;
+      }
+
+      [data-aos="slide-down"] {
+        opacity: 0 !important;
+        transform: translateY(-15px) !important;
+        transition-property: opacity, transform !important;
+      }
+
+      [data-aos="slide-down"].aos-animate {
+        opacity: 1 !important;
+        transform: translateX(0)  !important;
+      }
+
+      [data-aos="zoom-in"] {
+        opacity: 0 !important;
+        transform: translateY(25px) !important;
+        transition-property: opacity, transform !important;
+      }
+
+      [data-aos="zoom-in"].aos-animate {
+        opacity: 1 !important;
+        transform: translateX(0)  !important;
+      }
+
+    </style>
+</head>
+<body>
+    <section>
+        <main class="container">
+            <!-- Right Section-->
+            <div class="right-section">
+                <a href="#" onclick="window.close(); return false;" class="arrow-back" data-aos="slide-down"><i class="fa-solid fa-arrow-left"></i><span data-i18n="back_btn">Back</span></a>
+                <h2 data-aos="fade-right" data-aos-duration="1000">Project Portfolio</h2>
+                <div data-i18n="information_personal_web" class="information" data-aos="zoom-in" data-aos-duration="1200">    
+                    <p>collection of web development projects that showcase my skills in <br>creating modern, responsive, and user-friendly websites. Each project <br>reflects my passion for learning, improving my coding abilities, and <br>building real-world solutions with clean and efficient code.</p>
+                </div>
+                <div class="project-grid" data-aos="zoom-in" data-aos-duration="1200">
+                    <div class="project-items">
+                        <i class="fa-solid fa-code"></i>
+                        <span class="title-item">
+                            3
+                        </span>
+                        <small class="project-desc1" data-i18n="tech_used_count">
+                            Technologise Used 
+                        </small>
+                    </div>
+                    <div class="project-items">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <span class="title-item">
+                            3
+                        </span>
+                        <small class="project-desc2" data-i18n="key_features_count">
+                            Key Features
+                        </small>
+                    </div>
+                </div>
+                <div class="links" data-aos="slide-up" data-aos-duration="1200">
+                    <span class="link-item">
+                        <i class="fa-solid fa-up-right-from-square"></i>
+                        <span data-i18n="no_link">No Link</span>
+                    </span>
+                    <span class="link-item">
+                        <i class="fa-solid fa-link"></i>
+                        <span data-i18n="no_link">No Link</span>
+                    </span>
+                </div>
+                <!-- Technologies Used -->  
+                <div class="tech-used">
+                    <h3 data-aos="fade-right" data-aos-duration="1200" data-i18n="tech_used_count"><i class="fa-solid fa-code"></i>Technologies used</h3>
+                    <div class="tech-gird" data-aos="fade-up" data-aos-duration="1200">
+                        <div class="tech-items">
+                            <span><i class="fa-brands fa-html5"></i>
+                                HTML5
+                            </span>
+                        </div>
+                        <div class="tech-items">
+                            <span><i class="fa-brands fa-css3-alt"></i>
+                                CSS3
+                            </span>
+                        </div>
+                        <div class="tech-items">
+                            <span><i class="fa-brands fa-js"></i>
+                                JavaScript
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Left Section-->
+             <div class="left-section">
+                <div class="title-image" data-aos="slide-left" data-aos-duration="1200">
+                    <img src="picture/Screenshot_29-6-2026_222631_127.0.0.1.jpeg" alt="Screen_personal_web">
+                </div>
+                <div class="key-features" data-aos="slide-left" data-aos-duration="1200">
+                    <h3 data-aos="zoom-in" data-aos-duration="1600"><i class="fa-regular fa-lightbulb"></i><span data-i18n="key_features_count">Key Features</span></h3>
+                    <ul class="features-item" data-aos="zoom-in" data-aos-duration="1600">
+                        <li data-i18n="feature_responsive">Responsive Design</li>
+                        <li data-i18n="feature_multilang">Multi-Language Support</li>
+                        <li data-i18n="feature_contact">Contact Form</li>
+                    </ul>
+                </div>
+             </div>
+        </main>
+    </section>
+</body>
+<script src="lang.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</html>

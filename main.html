@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile website</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="Skills-section.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+      /* Your custom styles here */
+      html, body {
+        background-color: #000000 !important;
+        color: #ffffff !important;
+        margin: 0;
+        padding: 0;
+      }
+
+      [data-aos="slide-right"] {
+        opacity: 0 !important;
+        transform: translateX(-25px) !important;
+        transition-property: opacity, transform !important;
+      }
+
+      [data-aos="slide-right"].aos-animate {
+        opacity: 1 !important;
+        transform: translateX(0)  !important;
+      }
+      [data-aos="slide-left"] {
+        opacity: 0 !important;
+        transform: translateX(25px) !important;
+        transition-property: opacity, transform !important;
+      }
+
+      [data-aos="slide-left"].aos-animate {
+        opacity: 1 !important;
+        transform: translateX(0)  !important;
+      }
+
+      [data-aos="zoom-in"] {
+        opacity: 0 !important;
+        transform: translateY(25px) !important;
+        transition-property: opacity, transform !important;
+      }
+
+      [data-aos="zoom-in"].aos-animate {
+        opacity: 1 !important;
+        transform: translateX(0)  !important;
+      }
+
+      [data-aos="zoom-in-up"] {
+        opacity: 0 !important;
+        transform: translateY(35px) !important;
+        transition-property: opacity, transform !important;
+      }
+
+      [data-aos="zoom-in-up"].aos-animate {
+        opacity: 1 !important;
+        transform: translateX(0)  !important;
+      }
+    </style>
+  </head>
+  <body id="main-content" class="lao-font" data-aos="fade-up" data-aos-duration="1500">
+    <nav class="nav" data-aos="fade-down" data-aos-duration="1700" >
+      <header class="header">
+        <div class="text-logo">
+          <h2><a href="#">Kula.</a></h2>
+        </div>
+        <div class="menu">
+          <button class="hamburger" id="hamburgerMenu" aria-label="Toggle navigation">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+          
+          <ul class="menu-list">
+            <li><a href="#home" data-i18n="ho">Home</a></li>
+            <li><a href="#about" data-i18n="ab">About</a></li>
+            <li><a href="#skills" data-i18n="sk">Skills</a></li>
+            <li><a href="#contact" data-i18n="co">Contact</a></li>
+          </ul>
+        </div>
+        <div class="Lang-switcher">
+          <select id="LangSelect" onchange="changeLang(this.value)">
+            <option value="en">English</option>
+            <option value="th">ไทย</option>
+            <option value="la">ລາວ</option>
+          </select>
+        </div>
+      </header>
+    </nav>
+    <section id="home">
+      <div class="home-container">
+        <div class="con-infos-home">
+          <div class="text-sec" data-aos="fade-right" data-aos-duration="1000">
+            <p data-i18n="greeting">Welcome.</p>
+            <h1 id="typewriter1"></h1>
+            <p data-i18n="desc">
+              Hello! I am a student passionate about <br> web development,
+              AI, and continuous self-improvement in the digital world.
+            </p>
+            <div class="links">
+              <a
+                href="https://www.facebook.com/share/17GkwUdgyd/?mibextid=wwXIfr"
+                target="_blank"
+                id="link-btn-Facebook"
+                ><i class="fa-brands fa-facebook"></i>
+                <span>Facebook</span>
+              </a>
+              <a
+                href="https://www.tiktok.com/@kula_kucode"
+                target="_blank"
+                id="link-btn-TikTok"
+                ><i class="fa-brands fa-tiktok"></i>
+                <span>TikTok</span>
+              </a>
+            </div>
+          </div>
+          <div class="img-Kula-home" data-aos="fade-left" data-aos-duration="1000">
+            <img
+              src="picture/WhatsApp Image 2026-04-29 at 09.25.25.jpeg"
+              alt="Kula"
+              width="200px"
+            />
+          </div>
+        </div>
+        <div class="quote-section" data-aos="fade-down">
+          <p class="quote-text" data-i18n="text_qu">
+            "Hello World: Where every big journey begins."
+          </p>
+          <p class="quote-author" data-i18n="author_qu">- A programmer's origin.</p>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <div class="about-container">
+        <div class="Right-section-about">
+          <div class="text-aboutme">
+            <h2 data-i18n="ab_title" data-aos="fade-right">About Me</h2> 
+            <h3 data-i18n="ab_name" data-aos="fade-down">Hi, I'm <span>Kula!</span></h3>
+            <p data-i18n="ab_desc1" data-aos="zoom-in" class="white-text"></p>
+            <p data-i18n="ab_desc2" data-aos="zoom-in" class="white-text"></p>
+            <p data-i18n="ab_thanks" data-aos="zoom-in" class="white-text"></p>
+            <div class="stats" data-aos="fade-up">
+              <div class="stat-box">
+                <h3>1+</h3>
+                <p data-i18n="ab_year">CODING YEAR</p>
+              </div>
+              <div class="stat-box">
+                <h3>4+</h3>
+                <p data-i18n="ab_lang">LANGUAGE</p>
+              </div>
+              <div class="stat-box">
+                <h3>1+</h3>
+                <p data-i18n="ab_web">WEBSITE</p>
+              </div>
+            </div>
+            <div class="arrow" data-aos="fade-left">
+              <span class="arrow-text"><small data-i18n="arrow_text">Hire Me </small>
+              &#8594;
+              </span>
+            </div>
+            <div class="CV" data-aos="fade-left">
+              <a href="Modern Professional CV Resume.pdf" target="_blank" id="link-btn-CV">
+                <i class="fa-regular fa-file"></i>
+                <span data-i18n="DownloadCV">Download CV</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="left-section-about">
+          <div class="motivate_text-section" data-aos="fade-left">
+            <p class="motivate-text" id="typewriter2"></p>
+            <p class="motivate-author">— Kula.</p>
+          </div>
+          <div class="stats1">
+            <div class="stat-box1">
+              <h3>1+</h3>
+              <p data-i18n="ab_year">CODING YEAR</p>
+            </div>
+            <div class="stat-box1">
+              <h3>4+</h3>
+              <p data-i18n="ab_lang">LANGUAGE</p>
+            </div>
+            <div class="stat-box1">
+              <h3>1+</h3>
+              <p data-i18n="ab_web">WEBSITE</p>
+            </div>
+          </div>
+          <div class="arrow-cv">
+            <div class="arrow-left" data-aos="fade-left">
+              <span class="arrow-text1"><small data-i18n="arrow_text">Hire Me </small>
+              &#8594;
+              </span>
+            </div>
+            <div class="CV-left" data-aos="fade-left">
+              <a href="Modern Professional CV Resume.pdf" target="_blank" id="link-btn-CV">
+                <i class="fa-regular fa-file"></i>
+                <span data-i18n="DownloadCV">Download CV</span>
+              </a>
+            </div>
+          </div>
+        </div>
+    </section>
+    <section id="skills">
+      <h2 class="skills-title" data-aos="fade-right" data-i18n="sk_title">My Skills</h2>
+      <main class="portfolio-container">
+        <!-- LEFT SIDE -->
+        <section class="left-section" data-aos="fade-right">
+          <div class="profile-box">
+            <div class="avatar-placeholder">
+              <img
+                src="picture/WhatsApp Image 2026-03-15 at 18.59.26.jpeg"
+                alt="Kula"
+              />
+            </div>
+            <h3 class="profile-name" data-aos="slide-up" data-aos-duration="2000">Kula</h3>
+            <div class="profile-role" data-i18n="role" data-aos="zoom-in" data-aos-duration="2000">Web Developer & AI Entusiast</div>
+              <div class="profile-info">
+                <div class="profile-info-item">
+                  <span class="info-label" data-i18n="age" data-aos="slide-right" data-aos-duration="2000">Age</span>
+                  <span class="info-value" data-i18n="years" data-aos="slide-left" data-aos-duration="2000">15 Years.</span>
+                </div>
+                <div class="profile-info-item">
+                  <span class="info-label" data-i18n="edu" data-aos="slide-right" data-aos-duration="2000">Education</span>
+                  <span class="info-value" data-i18n="school" data-aos="slide-left" data-aos-duration="2000">Santiphab high school.</span>
+                </div>
+                <div class="profile-info-item">
+                  <span class="info-label" data-i18n="addr" data-aos="slide-right" data-aos-duration="2000">Address</span>
+                  <span class="info-value" data-i18n="live" data-aos="slide-left" data-aos-duration="2000">LPD (Laos).</span>
+                </div>
+                <div class="profile-info-item">
+                  <span class="info-label" data-i18n="exper" data-aos="slide-right" data-aos-duration="2000">Experience</span>
+                  <span class="info-value" data-i18n="exper_years" data-aos="slide-left" data-aos-duration="2000">1+ Year.</span>
+                </div>
+                <div class="arrow-cv" data-aos="slide-up" data-aos-duration="2000">
+                  <div class="arrow-info">
+                    <span class="arrow-text-info"><small data-i18n="arrow_text2">Hire Me </small>
+                      &#8594;
+                    </span>
+                  </div>
+                  <div class="CV-btn">
+                    <a href="Modern Professional CV Resume.pdf" target="_blank" download id="link-btn-CV">
+                      <i class="fa-regular fa-file"></i>
+                      <span data-i18n="DownloadCV2">Download CV</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- RIGHT SIDE -->
+        <section class="right-section" data-aos="fade-left">
+          <!-- NAVIGATION BAR -->
+          <nav class="navbar">
+            <button id="screen-nav" class="nav-button" data-i18n="Profile" data-section="profile" data-aos="zoom-in" data-aos-duration="2000">Profile</button>
+            <button class="nav-button" data-i18n="Skills_title" data-section="Skills" data-aos="zoom-in" data-aos-duration="2000">Skills</button>
+            <button class="nav-button" data-i18n="Cert_title" data-section="Certificate" data-aos="zoom-in" data-aos-duration="2000">Certificate</button>
+            <button class="nav-button" data-i18n="Project_title" data-section="Project" data-aos="zoom-in" data-aos-duration="2000">Project</button>
+          </nav>
+          <!-- DYNAMIC CONTENT AREA -->
+          <div class="content-box" id="contentBox">
+          <!-- JavaScript will load the default Skills content here -->
+          </div>
+        </section>
+      </main>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="contact-title">
+        <h2 data-i18n="contact_title" data-aos="fade-down">Contact Me</h2>
+        <p data-i18n="infos_massage" data-aos="fade-up">
+          Feel free to reach out, I'm always open to new ideas and collaborations!.
+        </p>
+      </div>
+
+      <nav class="contact-button">
+        <button class="contact-nav-button active" data-tab="direct" data-aos="zoom-in" data-aos-duration="2000" data-i18n="direct_contact">Direct Contact</button>
+        <button class="contact-nav-button" data-tab="message" data-aos="zoom-in" data-aos-duration="2000" data-i18n="Send_message">Send Message</button>
+      </nav>
+
+      <div class="contact-container" data-aos="zoom-in-up">
+        <div class="contact-left" id="Direct" data-tab-content="direct">
+          <div class="status" data-aos="zoom-in" data-aos-duration="2000">
+            <span class="dot"></span>
+            <span data-i18n="Service">SERVICE: ONLINE</span>
+          </div>
+          <div class="contact-info_num" data-aos="zoom-in">
+            <div class="info_num-item">
+              <i class="fa-regular fa-envelope"></i>
+              <div class="Email">
+                <p data-i18n="Email_label">EMAIL ME</p>
+                <a href="mailto:kula42435@gmail.com">kula42435@gmail.com</a>
+              </div>
+            </div>
+            <div class="info_num-item">
+              <i class="fa-brands fa-whatsapp"></i>
+              <div class="Whatsapp">
+                <p data-i18n="Whatsapp_chat">CHAT WHATSAPP</p>
+                <a href="https://wa.me/8562078737966">+856 78737966</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-right" id="Message" data-tab-content="message" data-aos="zoom-in" data-aos-duration="2000">
+          <div class="Sendmessage" data-aos="zoom-in" data-aos-duration="2000">
+            <i class="fa-regular fa-paper-plane"></i>
+            <span data-i18n="Send_message">SEND MESSAGE</span>
+          </div>
+          <form id="contactForm" class="contact-form" data-aos="zoom-in" data-aos-duration="2000">
+            <div class="formname-email">
+              <div class="input_group1">
+                <i class="fa-regular fa-user"></i>
+                <input
+                  type="text"
+                  name="from_name"
+                  data-i18n-placeholder="ID_name"
+                  required placeholder="Your name"
+                />
+              </div>
+              <div class="input_group2">
+                <i class="fa-regular fa-envelope"></i>
+                <input
+                  type="email"
+                  name="from_email"
+                  data-i18n-placeholder="ID_email"
+                  required placeholder="Your Email"
+                />
+              </div>
+            </div>
+            <textarea
+              name="message"
+              data-i18n-placeholder="Personal_Transmission_Data"
+              required placeholder="Write your message here..."
+            ></textarea>
+            <button type="submit" id="SubmitMessage" data-i18n="Submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-text">
+          <h2 data-aos="slide-right">Kula.</h2>
+          <p data-i18n="footer_description" data-aos="zoom-in-up">Turning your ideas and vision into reality through<br> modern code, elegent design and seamless user<br> experiences.</p>
+          <div class="social-icons" data-aos="zoom-in-up">
+            <a href="https://www.facebook.com/share/1DQVNc1b57/?mibextid=wwXIfr"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://github.com/kula4556"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.tiktok.com/@kula_kucode?_r=1&_t=ZS-98DCS3w8VN7"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://www.instagram.com/kulalee_paher/"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="quick-linksMenu">
+          <ul class="quick-links" data-aos="zoom-in-up">
+            <p data-i18n="quick_links_title" data-aos="slide-down"><span>Quick</span> Links:</p>
+            <li><a href="#home" data-i18n="home_link">Home</a></li>
+            <li><a href="#about" data-i18n="about_link">About</a></li>
+            <li><a href="#skills" data-i18n="skills_link">Skills</a></li>
+            <li><a href="#contact" data-i18n="contact_link">Contact</a></li>
+          </ul>
+        </div>
+        <div class="Startprojects">
+          <h3 data-i18n="startProject" data-aos="slide-left"><span>Start</span> a project with me:</h3>
+          <p data-i18n="footer_project_description" data-aos="zoom-in-up">Have a project in mind? Let's discuss <br>how I can help bring your ideas to life!</p>
+          <div class="btn-start" data-aos="flip-up">
+            <a href="#contact" class="start-project-btn"><span data-i18n="contact_btn_text">Contact Me</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer" data-aos="slide-right">
+        <p>&copy; <span data-i18n="current_text">2026 Kula. All rights reserved.</span></p>
+      </div>
+    </footer>
+  </body>
+  <script src="typewriter.js"></script>
+    <script src="lang.js"></script>
+    <script src="scroll.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="contact.js"></script>
+    <script src="loading.js"></script>
+    <script src="Skills-section.js"></script>
+    <script src="hamburger.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      setTimeout(function() {
+        AOS.init({
+          duration: 1200,
+          once: true,
+          offset: 50
+        });
+      }, 5000);
+    </script>
+</html>
